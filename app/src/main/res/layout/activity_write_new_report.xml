@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/firbk"
+    tools:context="com.example.ritesham.firapp.WriteNewReport">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:fontFamily="serif"
+                android:padding="3dp"
+                android:text="Personal Details"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etCname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:ems="10"
+                android:hint="Compainant's Name"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textCursorDrawable="@null" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spSO"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/holo_red_dark"
+                    android:entries="@array/sunoff" />
+
+                <EditText
+                    android:id="@+id/etCname2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/holo_orange_light"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@null" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etCaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:ems="10"
+                android:hint="Complainant's Address"
+                android:inputType="textPostalAddress"
+                android:textAlignment="center"
+                android:textCursorDrawable="@null" />
+
+            <EditText
+                android:id="@+id/etCmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:ems="10"
+                android:hint="Email ID"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:textCursorDrawable="@null" />
+
+            <EditText
+                android:id="@+id/etCmob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:ems="10"
+                android:hint="Phone No."
+                android:inputType="phone"
+                android:textAlignment="center"
+                android:textCursorDrawable="@null" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:fontFamily="serif"
+                android:padding="3dp"
+                android:text="Place of Occurrence"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:ems="10"
+                android:hint="Place of Occurrence"
+                android:inputType="textPostalAddress"
+                android:textAlignment="center"
+                android:textCursorDrawable="@null" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="6dp"
+                    android:text="District"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/spCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/holo_red_dark"
+                    android:entries="@array/district" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="6dp"
+                    android:text="Police Station"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/spThana"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/holo_red_dark"
+                    android:entries="@array/policeChoki" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="6dp"
+                    android:text="Date"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/holo_orange_light"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:inputType="date"
+                    android:textAlignment="textStart"
+                    android:textCursorDrawable="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="6dp"
+                    android:text="Time"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/holo_orange_light"
+                    android:ems="10"
+                    android:inputType="time"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etFacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:ems="10"
+                android:hint="Brief Facts"
+                android:inputType="textMultiLine"
+                android:textAlignment="center"
+                android:textCursorDrawable="@null" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:fontFamily="serif"
+                android:padding="3dp"
+                android:text="About FIR"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="6dp"
+                    android:text="Complainant For"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/spChori"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/holo_red_dark"
+                    android:entries="@array/firType" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingRight="6dp"
+                    android:text="Compainant Against"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etAgainst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/holo_orange_light"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:textCursorDrawable="@null" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etDiscription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:ems="10"
+                android:hint="Brief Description"
+                android:inputType="textMultiLine"
+                android:textAlignment="center"
+                android:textCursorDrawable="@null" />
+
+            <Button
+                android:id="@+id/btnFirSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@drawable/mybutton"
+                android:padding="4dp"
+                android:text="Submit"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

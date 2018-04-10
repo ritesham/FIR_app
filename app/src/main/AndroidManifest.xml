@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ritesham.firapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PoliceLogin" />
+        <activity android:name=".VictimLogin" />
+        <activity android:name=".ReportsActivity" />
+        <activity android:name=".NewVictimRegis" />
+        <activity android:name=".VictimOptions" />
+        <activity android:name=".PoliceOptions" />
+        <activity android:name=".WriteNewReport" />
+        <activity android:name=".ExistingReport" />
+        <activity android:name=".CancelReport" />
+        <activity android:name=".NewReports" />
+        <activity
+            android:name=".ReportsDetailsDialog"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert" />
+        <activity android:name=".ProcessReports" />
+        <activity android:name=".RejectReports" />
+        <activity android:name=".ReportDetailsDia1"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert"/>
+        <activity android:name=".ReportDetailsDia2"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert"/>
+        <activity android:name=".NewsFeedDialog"
+            android:theme="@style/Theme.AppCompat.Light.Dialog.Alert"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/firbk"
+    tools:context="com.example.ritesham.firapp.VictimLogin">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login ID"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mybutton"
+                android:text="Login"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvForget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forget Password"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tvNewUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register as New User"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

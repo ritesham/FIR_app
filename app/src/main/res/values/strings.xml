@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">FIR App</string>
+    <string-array name="sunoff">
+        <item>S/O</item>
+        <item>W/O</item>
+        <item>D/O</item>
+        <item>C/O</item>
+    </string-array>
+
+    <string-array name="district">
+        <item>Aligarh</item>
+        <item>Hatharas</item>
+        <item>Kasganj</item>
+        <item>Iglas</item>
+        <item>Sasni</item>
+    </string-array>
+
+    <string-array name="policeChoki">
+        <item>Thana Sasni Gate</item>
+        <item>Khhirni Gate Police Chowki</item>
+        <item>Thana Jaiganj</item>
+        <item>Thana Padiyavali</item>
+    </string-array>
+
+    <string-array name="firType">
+        <item>Stolen</item>
+        <item>Lost</item>
+        <item>Attack</item>
+        <item>Rape</item>
+        <item>Murder</item>
+    </string-array>
+
+</resources>
